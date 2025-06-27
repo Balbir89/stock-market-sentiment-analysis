@@ -12,17 +12,17 @@
 ![Google Colab](https://img.shields.io/badge/Google-Colab-F9AB00?logo=googlecolab)
 
 
-# Stock Market Sentiment Analysis 
+## Stock Market Sentiment Analysis 
 
 ---
 
-## Project Overview
+### Project Overview
 
 This project explores how news sentiment impacts stock price movements for major technology companies (Apple, Google, Amazon, Tesla, Microsoft). By combining historical stock price data with sentiment analysis of related news headlines, we build a Linear Regression model to predict stock closing prices. The goal is to understand how public sentiment influences market behavior.
 
 ---
 
-## Data Sources
+### Data Sources
 
 - **Stock Price Data:** Daily historical prices (`Date`, `Open`, `High`, `Low`, `Close`, `Volume`) for five tech companies.  
   CSV files are located in the `data/` folder.
@@ -31,7 +31,7 @@ This project explores how news sentiment impacts stock price movements for major
 
 ---
 
-## My Role
+### My Role
 
 - Data collection and preprocessing
 
@@ -43,7 +43,7 @@ This project explores how news sentiment impacts stock price movements for major
 
 ---
 
-## Results
+### Results
 
 - **Mean Squared Error (MSE):** 0.0000  
 - **R-squared (R²):** 1.0000  
@@ -52,7 +52,7 @@ These metrics indicate a near-perfect model fit on this dataset. However, such r
 
 ---
 
-## How to Run
+### How to Run
 
 How to Use
 - Clone the repository.
@@ -65,7 +65,7 @@ How to Use
 
 ---
 
-**Project Structure**
+### Project Structure
 
 stock-market-sentiment-analysis/
 │
@@ -84,7 +84,7 @@ stock-market-sentiment-analysis/
 
 ---
 
-**Acknowledgments**
+### Acknowledgments
 
 - Sentiment Analysis: VADER - NLTK
 
@@ -109,6 +109,12 @@ stock-market-sentiment-analysis/
 - Created automated pipeline for updating data and predictions.
 
 ---
+### Run Stock Sentiment Analysis Notebook in Google Colab
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Balbir89/stock-market-sentiment-analysis/blob/main/notebooks/stock_sentiment_analysis.ipynb)
+
+---
+
 
 
 ### Author

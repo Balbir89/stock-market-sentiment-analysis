@@ -2,6 +2,7 @@
  
 ![Python](https://img.shields.io/badge/python-3.7%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
+![PyPI Version](https://img.shields.io/pypi/v/your-package-name.svg)
 
 # Stock Market Sentiment Analysis 
 ![Build](https://img.shields.io/github/actions/workflow/status/Balbir89/stock-market-sentiment-analysis/main.yml?label=Build)

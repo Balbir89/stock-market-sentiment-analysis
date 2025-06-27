@@ -1,8 +1,9 @@
 # Stock Market Sentiment Analysis and Price Prediction
-
-# Stock Market Sentiment Analysis  
+ 
 ![Python](https://img.shields.io/badge/python-3.7%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
+
+# Stock Market Sentiment Analysis 
 
 This project explores how news sentiment affects stock price movement...
 

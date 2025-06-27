@@ -126,5 +126,3 @@ Email: balbirbhatia.20@gmail.com
 ---
 
 If you want, I can also help prepare a `requirements.txt` or a `.gitignore` if needed! Just let me know. Would you like me to do that then TRY ME!
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://img.shields.io/github/labels/Balbir89/stock-market-sentiment-analysis/bug)

@@ -4,9 +4,11 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 # Stock Market Sentiment Analysis 
+![Build](https://img.shields.io/github/actions/workflow/status/Balbir89/stock-market-sentiment-analysis/main.yml?label=Build)
+![Last Commit](https://img.shields.io/github/last-commit/Balbir89/stock-market-sentiment-analysis)
+![GitHub Followers](https://img.shields.io/github/followers/Balbir89?label=Follow&style=social)
 
-This project explores how news sentiment affects stock price movement...
-
+---
 
 ## Project Overview
 

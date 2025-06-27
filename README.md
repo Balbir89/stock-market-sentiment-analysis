@@ -125,6 +125,9 @@ Stock data: From publicly available sources
 
 I can also help prepare a ![requirements.txt](https://img.shields.io/badge/requirements.txt-included-blue) or a ![.gitignore](https://img.shields.io/badge/.gitignore-included-blue) if needed! Just let me know and work togeather.
 
+: ![requirements.txt](https://img.shields.io/badge/requirements.txt-included-blue) ![.gitignore](https://img.shields.io/badge/.gitignore-included-blue) — I can also help prepare these files if needed. Just let me know and we can work together!
+
+
 [![Try Me!](https://img.shields.io/badge/Try%20Me!-Let's%20Go!-brightgreen?style=for-the-badge)](#)
 
 

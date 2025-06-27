@@ -111,6 +111,13 @@ Balbir Singh
 GitHub: https://github.com/balbir89
 Email: balbirbhatia.20@gmail.com
 
+---
+
+### Author
+
+[![GitHub](https://img.shields.io/badge/GitHub-Balbir89-blue?logo=github&style=flat-square)](https://github.com/balbir89)
+[![Email](https://img.shields.io/badge/Email-balbirbhatia.20@gmail.com-red?style=flat-square&logo=gmail&logoColor=white)](mailto:balbirbhatia.20@gmail.com)
+
 
 ---
 

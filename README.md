@@ -1,5 +1,12 @@
 # Stock Market Sentiment Analysis and Price Prediction
 
+# Stock Market Sentiment Analysis  
+![Python](https://img.shields.io/badge/python-3.7%2B-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+This project explores how news sentiment affects stock price movement...
+
+
 ## Project Overview
 
 This project explores how news sentiment impacts stock price movements for major technology companies (Apple, Google, Amazon, Tesla, Microsoft). By combining historical stock price data with sentiment analysis of related news headlines, we build a Linear Regression model to predict stock closing prices. The goal is to understand how public sentiment influences market behavior.

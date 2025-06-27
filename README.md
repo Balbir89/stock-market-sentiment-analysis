@@ -2,47 +2,48 @@
 
 ## Project Overview
 
-This project investigates the relationship between news sentiment and stock price movements for major technology companies. Using historical stock data combined with sentiment analysis from related news headlines, we build a predictive model that estimates stock closing prices. The aim is to explore how public sentiment, as reflected in news, influences stock market behavior.
+This project explores how news sentiment impacts stock prices for major tech companies by analyzing historical price data alongside sentiment from news headlines. A predictive model is built to estimate closing prices based on public sentiment trends.
 
 ---
 
 ## Data Sources
 
 - **Stock Price Data:** Historical daily stock prices for Apple, Google, Amazon, Tesla, and Microsoft.
-  - Data includes columns such as `Date`, `Close`, `High`, `Low`, `Open`, and `Volume`.
-  - Source CSV files are located in the `data/` folder.
+- Stock Price Data
+-Daily price data for:
+-Apple, Google, Amazon, Tesla, and Microsoft
+-Includes: Date, Close, High, Low, Open, and Volume
+-Located in the data/ directory
   
 - **News Headlines:** Headlines related to each company are analyzed for sentiment using the VADER sentiment analyzer to generate polarity scores (`compound`, `positive`, `negative`, `neutral`).
 
 ---
 
-## Key Steps and Methodology
+## Project Workflow
 
-1. **Data Loading and Preparation**
-   - Load daily stock price data from CSV files.
-   - Convert date columns to datetime format for proper time-series handling.
-   - Sort data chronologically.
+Load Stock Data
 
-2. **Sentiment Analysis**
-   - Use the VADER sentiment analysis tool from the `nltk` library.
-   - Calculate sentiment polarity scores for news headlines.
-   - Aggregate sentiment scores by date.
+- Read CSVs, convert dates, and sort for time-series accuracy.
 
-3. **Data Integration**
-   - Merge daily stock data with daily aggregated sentiment scores based on dates.
-   - Align sentiment data with stock prices for modeling.
+Analyze Sentiment
 
-4. **Feature Engineering**
-   - Create lagged features for both stock closing prices and sentiment scores to capture temporal trends.
-   - Handle missing data by dropping or imputing where necessary.
+- Apply VADER to headlines and aggregate daily scores.
 
-5. **Model Training**
-   - Use a Linear Regression model to predict stock closing prices.
-   - Train the model on combined features of historical stock prices and sentiment polarity.
+Merge & Align
 
-6. **Evaluation**
-   - Evaluate the model using Mean Squared Error (MSE) and R-squared (R²) metrics.
-   - Visualize regression results and feature relationships.
+- Combine stock and sentiment data by date.
+
+Feature Engineering
+
+- Add lagged features (previous day’s stock/sentiment) to model temporal trends.
+
+Model Training
+
+- Fit a Linear Regression model using sentiment and historical stock features.
+
+Evaluation
+
+- Evaluate using MSE and R², and visualize the regression outcome.
 
 ---
 
@@ -51,7 +52,7 @@ This project investigates the relationship between news sentiment and stock pric
 - **Mean Squared Error (MSE):** 0.0000  
 - **R-squared (R²):** 1.0000  
 
-These results indicate a near-perfect fit on the provided dataset, suggesting that the model captures the relationship between sentiment and stock price exceptionally well. However, such perfect scores are unusual in real-world financial modeling and may indicate data leakage or overly simplistic modeling assumptions.
+The model shows perfect prediction on the dataset — highly accurate but may indicate overfitting or data leakage.
 
 ---
 
@@ -84,21 +85,15 @@ stock-sentiment-analysis/
 
 **Acknowledgments**
 
-Sentiment analysis powered by the VADER tool from the nltk library.
+Sentiment Analysis: VADER - NLTK
 
-Stock price data sourced from publicly available datasets.
-
----
-
-Contact Me, I'm Balbir Singh
-
-Email: balbirbhatia.20@gmail.com
+Stock data: From publicly available sources
 
 ---
 
 **Thank you for exploring this project!**
 
-If you want, I can help you customize the placeholders (like your GitHub username or email). Just let me know!
+ I'm Balbir Singh, If you want, I can help you customize the placeholders (like your GitHub username or email). Just let me know!
 Updated for: Balbir Singh – https://github.com/Balbir89
 
 ---
@@ -108,4 +103,7 @@ Updated for: Balbir Singh – https://github.com/Balbir89
 **Balbir Singh**  
 GitHub: [https://github.com/balbir89](https://github.com/balbir89)
 
+---
 
+Feel free to clone, explore, and adapt this project for your own financial analysis experiments.
+Thanks for visiting!

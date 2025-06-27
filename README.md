@@ -124,3 +124,7 @@ Stock data: From publicly available sources
 ---
 
 If you want, I can also help prepare a `requirements.txt` or a `.gitignore` if needed! Just let me know. Would you like me to do that then TRY ME!
+
+If you want, I can also help prepare a `requirements.txt` or `.gitignore` file. Just let me know!  
+[![Try Me!](https://img.shields.io/badge/Try%20Me!-Let's%20Go!-brightgreen?style=for-the-badge)](#)
+

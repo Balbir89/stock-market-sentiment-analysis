@@ -117,7 +117,6 @@ Stock data: From publicly available sources
 ### What I did:
 - Cleaned and organized sections clearly.
 - Made instructions simple and concise.
-- Added your GitHub link and email.
 - Included how to run with cloning, installing, and running notebook.
 - Highlighted project structure and results with cautions.
 

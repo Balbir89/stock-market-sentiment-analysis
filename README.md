@@ -94,12 +94,18 @@ Contact Me, I'm Balbir Singh
 
 Email: balbirbhatia.20@gmail.com
 
-GitHub: Balbir89
-
 ---
 
 **Thank you for exploring this project!**
 
 If you want, I can help you customize the placeholders (like your GitHub username or email). Just let me know!
+Updated for: Balbir Singh – https://github.com/Balbir89
+
+---
+
+## Author
+
+**Balbir Singh**  
+GitHub: [https://github.com/balbir89](https://github.com/balbir89)
 
 

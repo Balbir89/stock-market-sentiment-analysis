@@ -55,13 +55,13 @@ These metrics indicate a near-perfect model fit on this dataset. However, such r
 ## How to Run
 
 How to Use
-Clone the repository.
+- Clone the repository.
 
-Install dependencies with pip install -r requirements.txt.
+- Install dependencies with pip install -r requirements.txt.
 
-Run the Jupyter notebook or open the Colab link provided.
+- Run the Jupyter notebook or open the Colab link provided.
 
-Follow the notebook cells to replicate the analysis.
+- Follow the notebook cells to replicate the analysis.
 
 ---
 
@@ -86,21 +86,11 @@ stock-market-sentiment-analysis/
 
 **Acknowledgments**
 
-Sentiment Analysis: VADER - NLTK
+- Sentiment Analysis: VADER - NLTK
 
-Stock data: From publicly available sources
-
----
-
-### Author
-
-[![GitHub](https://img.shields.io/badge/GitHub-Balbir89-blue?logo=github&style=flat-square)](https://github.com/balbir89)
-[![Email](https://img.shields.io/badge/Email-balbirbhatia.20@gmail.com-red?style=flat-square&logo=gmail&logoColor=white)](mailto:balbirbhatia.20@gmail.com)
-
+- Stock data: From publicly available sources
 
 ---
-
-**Thank you for exploring this project! Feel free to reach out if you have questions or suggestions.**
 
 ### What I did
 - Cleaned and organized sections clearly.
@@ -111,16 +101,22 @@ Stock data: From publicly available sources
 ---
 
 ### Results & Impact
-Achieved near-perfect model fit on test data (R² = 1.00).
 
-Demonstrated clear correlation between news sentiment and stock price trends.
+- Achieved near-perfect model fit on test data (R² = 1.00).
 
-Created automated pipeline for updating data and predictions.
+- Demonstrated clear correlation between news sentiment and stock price trends.
+
+- Created automated pipeline for updating data and predictions.
 
 ---
 
 
-![requirements.txt](https://img.shields.io/badge/requirements.txt-included-blue) ![.gitignore](https://img.shields.io/badge/.gitignore-included-blue) — I can also help prepare these files if needed. Just let me know and we can work together!
+### Author
+
+[![GitHub](https://img.shields.io/badge/GitHub-Balbir89-blue?logo=github&style=flat-square)](https://github.com/balbir89)
+[![Email](https://img.shields.io/badge/Email-balbirbhatia.20@gmail.com-red?style=flat-square&logo=gmail&logoColor=white)](mailto:balbirbhatia.20@gmail.com)
+
+**Thank you for exploring this project! Feel free to reach out if you have questions or suggestions.**
 
 ---
 

@@ -56,6 +56,16 @@ The model shows perfect prediction on the dataset — highly accurate but may in
 
 ---
 
+## 🛠️ How to Run
+
+You can run this project directly in Google Colab without any setup:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/Balbir89/7eda694a4fecb656fb92e6a49d6dd67a/stock_sentiment_analysis.ipynb)
+
+This notebook includes all dependencies and setup steps.
+
+---
+
 ## Usage Instructions
 
 ### Prerequisites

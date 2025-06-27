@@ -99,15 +99,10 @@ Balbir Singh
 GitHub: https://github.com/balbir89
 Email: balbirbhatia.20@gmail.com
 
----
-
-**Thank you for exploring this project!**
-
- I'm Balbir Singh, If you want, I can help you customize the placeholders (like your GitHub username or email). Just let me know!
-Updated for: Balbir Singh – https://github.com/Balbir89
-
 
 ---
+
+**Thank you for exploring this project! Feel free to reach out if you have questions or suggestions.**
 
 ### What I did:
 - Cleaned and organized sections clearly.

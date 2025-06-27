@@ -102,15 +102,6 @@ Sentiment Analysis: VADER - NLTK
 
 Stock data: From publicly available sources
 
-
----
-
-## Author
-
-Balbir Singh
-GitHub: https://github.com/balbir89
-Email: balbirbhatia.20@gmail.com
-
 ---
 
 ### Author

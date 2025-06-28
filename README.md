@@ -124,10 +124,10 @@ stock-market-sentiment-analysis/
 ### Average Monthly Sentiment Scores Over Time
 ![Average Monthly Sentiment Scores](images/Average%20Monthly%20Sentiment%20Scores%20Over%20Time.png)
 
-### Polarity Distribution
+### Distribution
 ![Polarity Distribution](images/Polarity-Distribution.png)
 
-### Sentiment Polarity
+### Liner Regression
 ![Sentiment Polarity](images/Sentiment%20Polarity.png)
 
 ### Stock Price vs News Sentiment Over Time

@@ -110,27 +110,31 @@ stock-market-sentiment-analysis/
 
 ---
 
-## 📊 Visualizations
+## Visualizations
 
-### 📈 Actual vs Predicted Stock Price
-![Actual vs Predicted](images/actual_vs_predicted_stock_price.png)
+### Actual vs Predicted Stock Closing Price
+![Actual vs Predicted Stock Closing Price](images/Actual%20vs%20Predicted%20Stock%20Closing%20Price%20(Improved%20Mode.png)
 
-### 🍎 Apple Daily Closing Prices
-![Apple Prices](images/apple_closing_prices_mock_dates.png)
+### Apple Daily Closing Prices (With Mock Dates)
+![Apple Daily Closing Prices](images/Apple%20Daily%20Closing%20Prices%20(With%20Mock%20Dates.png)
 
-### 🧾 Apple Dataset Preview
-![Dataset Preview](images/apple_dataset_preview.png)
+### Apple Dataset Preview
+![Apple Dataset Preview](images/Apple%20dataset%20preview.png)
 
-### 🗓️ Monthly Sentiment Scores
-![Monthly Sentiment](images/monthly_sentiment_scores.png)
+### Average Monthly Sentiment Scores Over Time
+![Average Monthly Sentiment Scores](images/Average%20Monthly%20Sentiment%20Scores%20Over%20Time.png)
 
-### 🎯 Polarity and Subjectivity Analysis
-![Polarity](images/polarity_distribution.png)
-![Sentiment Polarity](images/sentiment_polarity.png)
+### Polarity Distribution
+![Polarity Distribution](images/Polarity-Distribution.png)
 
-### 🔁 Sentiment vs Stock Trends
-![Sentiment Over Time](images/price_vs_sentiment_over_time.png)
-![Subjectivity Over Time](images/price_vs_subjectivity_over_time.png)
+### Sentiment Polarity
+![Sentiment Polarity](images/Sentiment%20Polarity.png)
+
+### Stock Price vs News Sentiment Over Time
+![Stock Price vs Sentiment](images/Stock%20Price%20vs%20News%20Sentiment%20Over%20Time.png)
+
+### Stock Price vs News Sentiment Subjectivity Over Time
+![Stock Price vs Subjectivity](images/Stock%20Price%20vs%20News%20Sentiment%20Subjectivity%20Over%20Time.png)
 
 ---
 
@@ -152,6 +156,8 @@ stock-market-sentiment-analysis/
 ---
 
 [![Try Me!](https://img.shields.io/badge/Try%20Me!-Let's%20Go!-brightgreen?style=for-the-badge)](#)
+
+
 
 
 

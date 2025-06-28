@@ -2,7 +2,7 @@
  
 ![Python](https://img.shields.io/badge/Python-3.8-blue?logo=python)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-orange?logo=pandas)
-![NumPy](https://img.shields.io/badge/NumPy-Numerical-blue?logo=numpy)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical-blue?logo=numpy) 
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-yellow?logo=matplotlib)
 ![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-9cf)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?logo=scikit-learn)

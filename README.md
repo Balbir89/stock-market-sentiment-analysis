@@ -109,6 +109,31 @@ stock-market-sentiment-analysis/
 - Created automated pipeline for updating data and predictions.
 
 ---
+
+## 📊 Visualizations
+
+### 📈 Actual vs Predicted Stock Price
+![Actual vs Predicted](images/actual_vs_predicted_stock_price.png)
+
+### 🍎 Apple Daily Closing Prices
+![Apple Prices](images/apple_closing_prices_mock_dates.png)
+
+### 🧾 Apple Dataset Preview
+![Dataset Preview](images/apple_dataset_preview.png)
+
+### 🗓️ Monthly Sentiment Scores
+![Monthly Sentiment](images/monthly_sentiment_scores.png)
+
+### 🎯 Polarity and Subjectivity Analysis
+![Polarity](images/polarity_distribution.png)
+![Sentiment Polarity](images/sentiment_polarity.png)
+
+### 🔁 Sentiment vs Stock Trends
+![Sentiment Over Time](images/price_vs_sentiment_over_time.png)
+![Subjectivity Over Time](images/price_vs_subjectivity_over_time.png)
+
+---
+
 ### Run Stock Sentiment Analysis Notebook in Google Colab
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Balbir89/stock-market-sentiment-analysis/blob/main/notebooks/stock_sentiment_analysis.ipynb)

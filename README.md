@@ -1,163 +1,297 @@
-# Stock Market Sentiment Analysis and Price Prediction
- 
-![Python](https://img.shields.io/badge/Python-3.8-blue?logo=python)
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-orange?logo=pandas)
-![NumPy](https://img.shields.io/badge/NumPy-Numerical-blue?logo=numpy) 
-![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-yellow?logo=matplotlib)
-![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Plots-9cf)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-ML-orange?logo=scikit-learn)
-![NLTK](https://img.shields.io/badge/NLTK-NLP-green?logo=python)
-![Alpha Vantage](https://img.shields.io/badge/API-AlphaVantage-purple)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter)
-![Google Colab](https://img.shields.io/badge/Google-Colab-F9AB00?logo=googlecolab)
+# Stock Price and News Sentiment — Exploratory Analysis
 
+An independent Python portfolio project exploring stock-price data, news-text sentiment and linear regression.
 
-## Stock Market Sentiment Analysis 
+The current notebook is an exploratory prototype, not a validated stock-forecasting system.
 
----
+[View Notebook](notebooks/stock_sentiment_analysis.ipynb) · [View Charts](images)
 
-### Project Overview
+## Project Objective
 
-This project explores how news sentiment impacts stock price movements for major technology companies (Apple, Google, Amazon, Tesla, Microsoft). By combining historical stock price data with sentiment analysis of related news headlines, we build a Linear Regression model to predict stock closing prices. The goal is to understand how public sentiment influences market behavior.
+Explore a workflow for loading stock data, retrieving news, calculating sentiment scores and investigating possible relationships between sentiment and prices.
 
----
+The implemented news and modeling examples focus on **Apple**. Price CSV files for five companies are included.
 
-### Data Sources
+## Tools Used
 
-- **Stock Price Data:** Daily historical prices (`Date`, `Open`, `High`, `Low`, `Close`, `Volume`) for five tech companies.  
-  CSV files are located in the `data/` folder.
+| Tool | Purpose |
+|---|---|
+| Python | Analysis workflow |
+| Pandas and NumPy | Data processing and calculations |
+| Requests and NewsAPI | News retrieval |
+| TextBlob | Sentiment polarity and subjectivity |
+| yfinance | Additional Apple stock-data retrieval |
+| Matplotlib | Charts |
+| Scikit-learn | Linear regression and fit metrics |
+| Jupyter Notebook | Code, explanations and outputs |
 
-- **News Headlines:** News headlines related to the companies, analyzed using VADER sentiment analyzer to generate polarity scores (`compound`, `positive`, `negative`, `neutral`).
+The notebook uses **TextBlob**, not VADER, for sentiment scoring.
 
----
+## Data Sources and Scope
 
-### My Role
+### Included Price Data
 
-- Data collection and preprocessing
+The `data/` directory contains:
 
-- Sentiment analysis using NLP techniques
+- `apple.csv`
+- `google.csv`
+- `amazon.csv`
+- `tesla.csv`
+- `microsoft.csv`
 
-- Time series forecasting and model evaluation
+The original source, extraction dates and adjustment conventions of these CSV files still need to be documented.
 
-- Visualization of stock trends and sentiment impact
+### News Data
 
----
+The notebook includes a NewsAPI request for Apple articles dated **June 20–27, 2025**.
 
-### Results
+News availability depends on the API account's historical-data permissions and the requested date range.
 
-- **Mean Squared Error (MSE):** 0.0000  
-- **R-squared (R²):** 1.0000  
+Sentiment scores are calculated from article descriptions using TextBlob.
 
-These metrics indicate a near-perfect model fit on this dataset. However, such results may suggest data leakage or overly simple assumptions, so interpret them cautiously.
+### Additional Stock Data
 
----
+Later notebook cells request Apple stock data through yfinance for January 2024 through June 2025.
 
-### How to Run
+### Date Handling
 
-How to Use
-- Clone the repository.
+Some exploratory cells assign artificial dates to prices and news. These are demonstration timelines, not verified trading dates or publication timestamps.
 
-- Install dependencies with pip install -r requirements.txt.
+Historical price–news relationships cannot be established from artificial date alignment.
 
-- Run the Jupyter notebook or open the Colab link provided.
+## Analysis Implemented
 
-- Follow the notebook cells to replicate the analysis.
+### 1. Load and Inspect Stock Data
 
----
+- Load the five company CSV files.
+- Inspect Apple price records.
+- Remove observations missing closing prices in the relevant analysis step.
 
-### Project Structure
+### 2. Visualize Apple Prices
 
-stock-market-sentiment-analysis/
-│
-├── data/
-│   ├── apple.csv
-│   ├── google.csv
-│   ├── amazon.csv
-│   ├── tesla.csv
-│   └── microsoft.csv
-│
-├── stock_sentiment_analysis.ipynb
-├── README.md
-├── requirements.txt (optional)
-└── LICENSE
+Plot Apple closing prices, including an exploratory chart using mock dates.
 
+### 3. Retrieve and Score News
 
----
+- Request Apple news articles.
+- Extract titles and descriptions.
+- Calculate sentiment polarity and subjectivity.
+- Summarize and visualize score distributions.
 
-### Acknowledgments
+### 4. Explore Time-Based Relationships
 
-- Sentiment Analysis: VADER - NLTK
+- Attempt monthly sentiment aggregation.
+- Attempt joins between sentiment and stock prices.
+- Plot prices alongside sentiment scores.
+- Calculate exploratory correlations.
 
-- Stock data: From publicly available sources
+These steps require corrected timestamp handling before their results can support historical conclusions.
 
----
+### 5. Fit Regression Models
 
-### What I did
-- Cleaned and organized sections clearly.
-- Made instructions simple and concise.
-- Included how to run with cloning, installing, and running notebook.
-- Highlighted project structure and results with cautions.
+The notebook includes:
 
----
+- A linear regression using sentiment polarity.
+- An expanded regression using polarity, subjectivity and stock volume.
+- Fitted-value comparisons and residual plots.
 
-### Results & Impact
+## Model Evaluation Status
 
-- Achieved near-perfect model fit on test data (R² = 1.00).
+The notebook fits a model on `X` and `y`, then evaluates predictions on those same observations. The expanded model follows the same pattern.
 
-- Demonstrated clear correlation between news sentiment and stock price trends.
+These are **in-sample fit metrics**, not held-out test results.
 
-- Created automated pipeline for updating data and predictions.
+Previously reported perfect scores, including R² = 1.00 and MSE = 0, do not demonstrate reliable forecasting ability.
 
----
+Before making predictive claims, the workflow needs:
 
-## Visualizations
+- Verified trading dates and news publication timestamps
+- Correct alignment of prices and news
+- An adequate number of observations
+- A clearly defined future prediction target
+- Chronological out-of-sample evaluation
+- Comparison with a simple baseline
 
-### Actual vs Predicted Stock Closing Price
-![Actual vs Predicted Stock Closing Price](images/Actual%20vs%20Predicted%20Stock%20Closing%20Price%20(Improved%20Mode.png)
+## Selected Visualizations
 
-### Apple Daily Closing Prices (With Mock Dates)
-![Apple Daily Closing Prices](images/Apple%20Daily%20Closing%20Prices%20(With%20Mock%20Dates.png)
+These images document exploratory outputs, not validated predictive performance.
 
-### Apple Dataset Preview
-![Apple Dataset Preview](images/Apple%20dataset%20preview.png)
+### Sentiment Distribution
 
-### Average Monthly Sentiment Scores Over Time
-![Average Monthly Sentiment Scores](images/Average%20Monthly%20Sentiment%20Scores%20Over%20Time.png)
+![Sentiment Distribution](images/Polarity-Distribution.png)
 
-### Distribution
-![Polarity Distribution](images/Polarity-Distribution.png)
+### Exploratory Sentiment Regression
 
-### Liner Regression
-![Sentiment Polarity](images/Sentiment%20Polarity.png)
+![Sentiment Regression](images/Sentiment%20Polarity.png)
 
-### Stock Price vs News Sentiment Over Time
-![Stock Price vs Sentiment](images/Stock%20Price%20vs%20News%20Sentiment%20Over%20Time.png)
+### Prices and Sentiment Polarity
 
-### Stock Price vs News Sentiment Subjectivity Over Time
-![Stock Price vs Subjectivity](images/Stock%20Price%20vs%20News%20Sentiment%20Subjectivity%20Over%20Time.png)
+![Prices and Sentiment Polarity](images/Stock%20Price%20vs%20News%20Sentiment%20Over%20Time.png)
 
----
+### Prices and Sentiment Subjectivity
 
-### Run Stock Sentiment Analysis Notebook in Google Colab
+![Prices and Sentiment Subjectivity](images/Stock%20Price%20vs%20News%20Sentiment%20Subjectivity%20Over%20Time.png)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Balbir89/stock-market-sentiment-analysis/blob/main/notebooks/stock_sentiment_analysis.ipynb)
+Time-based comparisons require correction of the underlying timestamp handling before interpretation.
 
----
+## How to Explore
 
+Open the notebook on GitHub to inspect its code and saved outputs.
 
+### 1. Clone the Repository
 
-### Author
+```bash
+git clone https://github.com/Balbir89/stock-market-sentiment-analysis.git
+cd stock-market-sentiment-analysis
+```
 
-[![GitHub](https://img.shields.io/badge/GitHub-Balbir89-blue?logo=github&style=flat-square)](https://github.com/balbir89)
-[![Email](https://img.shields.io/badge/Email-balbirbhatia.20@gmail.com-red?style=flat-square&logo=gmail&logoColor=white)](mailto:balbirbhatia.20@gmail.com)
+### 2. Install Dependencies
 
-**Thank you for exploring this project! Feel free to reach out if you have questions or suggestions.**
+```bash
+python -m pip install pandas numpy matplotlib requests textblob scikit-learn yfinance jupyter
+```
 
----
+### 3. Start Jupyter
 
-[![Try Me!](https://img.shields.io/badge/Try%20Me!-Let's%20Go!-brightgreen?style=for-the-badge)](#)
+```bash
+jupyter notebook
+```
 
+Open:
 
+`notebooks/stock_sentiment_analysis.ipynb`
 
+### 4. Set the Working Directory
 
+The first notebook cells also clone the repository and change directories.
 
+When using an existing local clone, skip those cells. The notebook's working directory must be the repository root so paths such as `data/apple.csv` resolve correctly.
+
+If the notebook starts inside the `notebooks/` directory, use:
+
+```python
+from pathlib import Path
+import os
+
+if Path.cwd().name == "notebooks":
+    os.chdir(Path.cwd().parent)
+
+assert Path("data/apple.csv").exists(), "Set the working directory to the repository root."
+```
+
+### 5. Configure NewsAPI Access
+
+Use your own NewsAPI credentials. Replace the notebook's hard-coded API-key assignment with:
+
+```python
+import os
+from getpass import getpass
+
+api_key = os.environ.get("NEWSAPI_KEY")
+
+if not api_key:
+    api_key = getpass("Enter your NewsAPI key: ")
+```
+
+This reads the key from an environment variable or prompts without displaying it.
+
+Previously exposed credentials should be revoked or rotated by their owner. Do not commit replacement keys.
+
+The historical request window may need adjustment depending on your API access. Any change must also preserve valid alignment with the stock-data period.
+
+### 6. Review Execution Issues
+
+The notebook requires the corrections listed below before a reliable top-to-bottom run.
+
+These README instructions do not automatically repair the notebook code, and a clean full execution has not been verified.
+
+## Known Issues and Limitations
+
+### Missing Date Column
+
+A cell accesses `df_news['date']` before the initial news DataFrame creates that column.
+
+The news-processing step should preserve actual publication timestamps before attempting time aggregation.
+
+### Artificial Date Alignment
+
+Some cells assign synthetic dates to stock and news records. This prevents reliable interpretation of historical sentiment–price relationships.
+
+### API Response Handling
+
+Later cells depend on a successful news response. Failed requests or empty article lists need explicit handling.
+
+### Date Index Compatibility
+
+Monthly periods, timestamps and daily prices need a consistent alignment policy before merging.
+
+### Download and CSV Compatibility
+
+Stock downloads and CSV parsing may need adjustments for library versions, multi-level columns and date formats.
+
+### Training-Data Evaluation
+
+Regression metrics are calculated on the observations used to fit the models. There is no chronological holdout evaluation.
+
+### Prediction Timing
+
+Same-period price fitting is not equivalent to forecasting future prices or returns. Features must be available before the prediction target occurs.
+
+### Residual Index Alignment
+
+Converting predictions into a new Pandas Series may discard the original index. Observations and predictions must retain matching indexes before calculating residuals.
+
+### Data Provenance
+
+The original source and extraction details of the bundled stock CSVs need documentation.
+
+## Repository Contents
+
+| Path | Description |
+|---|---|
+| `data/apple.csv` | Apple price data |
+| `data/google.csv` | Google price data |
+| `data/amazon.csv` | Amazon price data |
+| `data/tesla.csv` | Tesla price data |
+| `data/microsoft.csv` | Microsoft price data |
+| `notebooks/stock_sentiment_analysis.ipynb` | Main notebook |
+| `images/` | Saved chart images |
+| `LICENSE` | Repository license file |
+| `README.md` | Project documentation |
+
+Additional CSV files are generated by notebook cells when those cells execute successfully.
+
+## Skills Demonstrated
+
+- Loading and inspecting financial CSV data
+- Retrieving data through an API
+- Calculating text sentiment scores
+- Aggregating and visualizing data
+- Implementing linear regression
+- Calculating fit metrics and residuals
+- Identifying timestamp and validation limitations
+
+## Next Improvements
+
+- Document the provenance and date coverage of the bundled datasets.
+- Preserve real publication timestamps and trading dates.
+- Remove artificial date alignment.
+- Handle failed API requests and empty responses.
+- Remove hard-coded credentials from notebook source.
+- Define a future prediction target.
+- Use only information available before the prediction time.
+- Evaluate on later unseen dates against a simple baseline.
+- Report sample size, coverage and out-of-sample metrics.
+- Preserve index alignment during prediction and residual analysis.
+- Consolidate notebook steps and add versioned dependencies.
+- Verify execution in a fresh environment.
+
+## Author
+
+**Balbir Singh**
+
+M.Sc. Finance & Investment | Data Analysis | Finance & Operations
+
+- [LinkedIn](https://www.linkedin.com/in/balbir-finance-investment-berlin/)
+- [GitHub](https://github.com/Balbir89)
+- [Email](mailto:balbirbhatia.20@gmail.com)
